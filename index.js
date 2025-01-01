@@ -50,9 +50,8 @@ function filterbyDiscount(products) {
     });
 
     // Ensure unique products by ID
-    let uniqueProducts = Array.from(
-      new Map(filterProducts.map((product) => [product.id, product])).values()
-    );
+    let uniqueProducts = [...new Map(filterProducts.map((product) => [product.id, product])).values()];
+
 
     showdata(uniqueProducts); // Show filtered products
   });
