@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-div{
+    background-color: aqua;
+    padding:5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#productlist{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+}
+
+#productlist>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 4px rgba(0 , 0, 0, 0.3);
+}
